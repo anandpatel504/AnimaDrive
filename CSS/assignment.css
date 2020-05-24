@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', cursive;
+}
+#left img{
+    border: 2px solid black;
+    width: 6rem;
+    height: 4rem;
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+#navbar{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+#right{
+    /* width: 25rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 0.5rem; */
+}
+.items{
+    text-decoration: none;
+    margin-right: 3rem;
+    color: black;
+}
+.items:hover{
+    color: white;
+    border-bottom:2px solid black;
+}
+#container{
+    /* border: 2px solid #ff0000; */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h1{
+    color: black;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    box-shadow: 0.3em 0.3em 0.3em black;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.3rem;
+}
+#small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 2rem;
+    width: 70%;
+    margin-bottom: 3rem;
+    /* height: 30rem; */
+    padding: 4rem 2rem 4rem 2rem;
+}
+#h2{
+    color: orange;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    /* font-size: 2.5rem; */
+    text-shadow: 0.2em 0.2em 0.3em black;
+}
+.selfie_img{
+    width: 60%;
+    /* height: 1%; */
+    border: 2px solid black;
+}
+.selfie_img_1{
+    width: 60%;
+    /* height: 25%; */
+    border: 2px solid black;
+}
+.gap{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+#footer{
+    background-color: black;
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join{
+    border: 2px solid white;
+    border-radius: 1.5rem;
+}
+.join_us{
+    margin: 2rem 2rem;
+    text-decoration: none;
+    animation: blinkingtext 1.2s infinite;
+}
+@keyframes blinkingtext{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: white;    }
+}
+@media only screen and (max-width:570px){
+    #right{
+        flex-direction: column;
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width:400px){
+    .box p{
+        font-size: 70%;
+    }
+}

@@ -1,0 +1,249 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#navbar{
+  background-color: orange;
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  font-family: 'Anton', cursive;
+  z-index: 1;
+}
+#left img{
+  border: 2px solid black;
+  width: 6rem;
+  height: 4rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 2rem;
+}
+#right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items{
+  text-decoration: none;
+  color: black;
+  margin-right: 3rem;
+}
+.items:hover{
+  color: white;
+  border-bottom: 2px solid black;
+}
+#big_box{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 8rem;
+
+}
+.box{
+  border: 1px solid black;
+  box-shadow: 0.3em 0.3em 0.3em black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: orange;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  margin-right: 1.5rem;
+}
+.term {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 25%;
+  top: 7rem;
+  width: 50%; /* Full width */
+  height: 70%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white;
+  opacity: 3;
+  border: 2px solid black;
+  padding: 5rem 2rem;
+}
+.termbtn{
+  margin-left: 29%;
+  color: white;
+  width: 45%;
+  background-color:black;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 45%;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  z-index: 2;
+  /* border: 2px solid red; */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 15%;
+  top: 6rem;
+  width: 70%; /* Full width */
+  height: 75%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: orange;
+  opacity: 0.9;
+  border: 2px solid black;
+  padding-top: 2rem;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  font-size: 1rem;
+  margin: 1% auto 3% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 3rem;
+}
+@media only screen and (max-width:960px){
+  #big_box{
+    width: 100%;
+  }
+  .modal{
+    left: 5%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width:630px){
+  #right{
+    flex-direction: column;
+    font-size: 70%;
+  }
+  #big_box{
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    /* width: 100%; */
+  }
+  .box{
+    font-size: 70%;
+    width: 20%;
+    height: 10rem;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+  }
+  .modal{
+    left: 15%;
+    width: 70%;
+    padding: 0.1rem;
+  }
+  .term{
+    width: 66%;
+  }
+}
+@media only screen and (max-width:450px){
+  .box{
+    font-size: 50%;
+  }
+}
+
+
+
+
+
+/* @media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+} */

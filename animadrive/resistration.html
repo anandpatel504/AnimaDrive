@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="left">
+            <img src="../IMAGES/IMG_20200515_190322.jpg" alt="logo">
+        </div>
+        <!-- <form action="/student_register" method="post"></form> -->
+        <div id="right">
+            <a href="social_pathshala.html" class="items">Home</a>
+            <a href="contact.html" class="items">Contact Us</a>
+            <a href="gallery.html" class="items">Gallery</a>
+            <a href="assignment.html" class="items">Assignment</a>
+        </div>
+    </nav>
+    <div id="big_box">
+        <div id="sign_up_teacher" class="box">
+            <p style="font-size: 0.8rem;">If you are a teacher</p>
+            <h2>Teacher</h2>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>  
+        </div>
+        <div id="sign_up_student" class="box">
+            <p style="font-size: 0.8rem;">If you are a student</p>
+            <h2>Student</h2>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>  
+        </div>
+        <!-- <div id="log_in" class="box">
+            <p style="font-size: 0.8rem;">Already sign up</p>
+            <h2>Log in</h2>
+            <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Log In</button>  
+        </div> -->
+    </div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/teacher_register" method="POST">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="Name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="WhatsApp"><b>WhatsApp Number</b></label>
+                <input type="text" placeholder="Enter WhatsApp Number" name="whats_app_number" required>
+
+                <label for="institute"><b>Institute</b></label>
+                <input type="text" placeholder="Enter your Institute name with Address" name="institute" required>
+
+                <label for="institute"><b>Board of Institute</b></label>
+                <input type="text" placeholder="Enter your Board of Institute" name="board_of_institute" required>
+
+
+
+                <!-- <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label> -->
+                <div id="terms">
+                    <button onclick="document.getElementById('id04').style.display='block'">
+                        <p>By creating an account you agree to our <a href="#" style="color:black">Terms & Privacy</a>.</p></button>
+                    <div id="id04" class="term">
+                        <span onclick="document.getElementById('id04').style.display='none'" title="Close Modal"></span>
+                        <p class="terms">Rules to be followed by schools:
+                            <br><br>
+                            The schools which are interested in collaborating with us has to sign the collaboration letter then has to send it to us either by Email(id:driveanima@gmial.com) or WhatsApp(No.7457876189).
+                            <br><br>
+                            All the collaborated schools has to appoint co-ordinator for the project given to their students.
+                            <br><br>
+                            The appointed co-ordinator after collecting the project from their students has to send the project of all students with their details either by mail or WhatsApp number given on our website.</p>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id04').style.display='none'"
+                            class="termbtn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="1" action="/student_register" method="POST">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="Name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="WhatsApp"><b>WhatsApp Number</b></label>
+                <input type="text" placeholder="Enter WhatsApp Number" name="whats_app_number" required>
+
+                <label for="institute"><b>Institute</b></label>
+                <input type="text" placeholder="Enter your Institute name with Address" name="institute" required>
+
+                <!-- <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label> -->
+                <div id="terms">
+                    <button onclick="document.getElementById('id05').style.display='block'">
+                        <p>By creating an account you agree to our <a href="#" style="color:black">Terms & Privacy</a>.</p></button>
+                    <div id="id05" class="term">
+                        <span onclick="document.getElementById('id04').style.display='none'" title="Close Modal"></span>
+                        <p class="terms">Rule to be followed by students for the submission of the project are as follow: <br> <br>It is required that every student must submit their photograph without edit along with their project. 
+                        <br> <br>
+                        It is to be kept in mind that along with the project every student must give their details such as their Name,Class and Section.
+                         <br> <br>
+                        All the students has to submit their project to their co-ordinator or to the authorised person of their school.
+                        </p>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id05').style.display='none'"
+                            class="termbtn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- <div id="id03" class="modal">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Log in</h1>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id03').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Log In</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+    <footer id="footer">
+
+    </footer>
+    <script>
+        // Get the modal
+        var modal_1 = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal_1) {
+                modal_1.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: orange;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    font-family: 'Anton', cursive;
+    z-index: 1;
+}
+#left img{
+    border: 2px solid black;
+    width: 6rem;
+    height: 4rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 2rem;
+}
+#right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    text-decoration: none;
+    color: black;
+    margin-right: 3rem;
+}
+.items:hover{
+    color: white;
+    border-bottom: 2px solid black;
+}
+#container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container h1{
+    font-family: 'Anton', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    border-radius: 1rem;
+    padding: 0.3rem 1.5rem;
+    box-shadow: 0.2em 0.2em 0.2em black;
+}
+#small{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+    margin-top: 12rem ;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.box{
+    border: 3px solid black;
+    width: 80%;
+    height: 20rem;
+    margin-left: 10%;
+    border-radius: 1.5rem;
+    box-shadow: 0.7em 0.7em 0.5em black;
+}
+.box img{
+    border-radius: 1.3rem;
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    background-color: black;
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    height: 1.8rem;
+}
+@media only screen and (max-width:900px){
+    #small{
+        grid-template-columns: repeat(2,auto);
+    }
+    .box{
+        width: 60%;
+        height: 15rem;
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width:680px){
+    #small{
+        grid-template-columns: repeat(1,auto);
+    }
+    #right{
+        flex-direction: column;
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width:430px){
+    
+    .box{
+        height: 12rem;
+    }
+}

@@ -11,6 +11,10 @@ app.use(express.static(__dirname))
 let knex = require("./models/database")
 // console.log('database', knex);
 
+// Redirect main_page;
+app.get("/", (req, res) => {
+	res.redirect("/main_page");
+});
 
 // Get main page
 app.get("/main_page", (req, res) => {

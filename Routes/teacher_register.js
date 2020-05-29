@@ -29,8 +29,8 @@ module.exports = (app,Swal, path, knex) => {
                     })
                 }else{
                     console.log({"exist": "this user alredy exists.."});
-                    res.send({"exist": "this user alredy exists.."});
-                    // Add notification (User already exist!)
+                    // res.send({"exist": "this user alredy exists.."});
+                    res.sendFile((path.join(__dirname, '../animadrive/exist.html')));
                 }
             }).catch((err) =>{
                 console.log(err);

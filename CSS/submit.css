@@ -1,14 +1,51 @@
-body {
-    background-image:url("https://cdn.glitch.com/fde7c508-763b-4a1d-83ed-d4a294ac2ec7%2Fcold-daylight-desktop-backgrounds-1287145.jpg?v=1560688689944"); 
-   background-repeat:no-repeat;
-   background-attachment: fixed;
-   background-size: cover;}
-.center_div{
-   width: 50%;
-   height: 120px;
-   margin: auto;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
    display: flex;
+   flex-direction: column;
    justify-content: center;
+   align-items: center;
+}
+#navbar{
+   background-color: orange;
+   height: 5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Anton', cursive;
+   position: fixed;
+   top: 0%;
+   width: 100%;
+   /* margin-bottom: 30; */
+}
+#left img{
+   border: 2px solid black;
+   width: 6rem;
+   height: 4rem;
+   margin-left: 2rem;
+}
+.items{
+   color: black;
+   margin-right: 1rem;
+   text-decoration: none;
+   letter-spacing: 0.1rem;
+}
+.items:hover{
+   color: white;
+   border-bottom: 2px solid black;
+}
+#container{
+   /* border: 2px solid red; */
+   margin-top: 7rem;
+   width: 100%;
+   height: 25rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 .img{
    height: 120px;
@@ -18,7 +55,7 @@ body {
    align-items: center;
 }
 .text{
-   /*background-color: #262626;*/
+   width: 30%;
    box-shadow: 0 5px 10px 0 rgba(1.4, 1, 1, 1.4);
    margin: 2% 17% 0% 17%;
    padding: 20px;
@@ -26,32 +63,56 @@ body {
    font-size: 13px;
    border-radius: 20px;
    color: white;
-   opacity: .7;
 }
-.button{	
- background-color: #cc0000;
- color: white;
- text-align: center;
- display: inline-block;
- font-size: 26px;
- margin: 55px;
- border-radius: 5px;
-}
-h2{
+.text p{
    color: black;
+   font-size:1rem;
 }
-@media only screen and (max-width: 1000px){
-   .submit_name{
-       margin: 90px;
+#footer{
+   background-color: black;
+   position: fixed;
+   bottom: 0%;
+   width: 100%;
+   height: 2.5rem;
+   font-family: 'Anton', cursive;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.1rem;
+   font-size: 0.7rem;
+}
+@media only screen and (max-width: 800px){
+   #navbar{
+      height: 6rem;
    }
    .text{
-   margin: 2% 7% 0% 7.1%;
-   font-size: 14px;
-   border-radius: 20px;
-   color: white;
+      width: 50%;
    }
-   .button{	
-     background-color: #cc0000;
-     margin: 90px;
+}
+@media only screen and (max-width:540px){
+   #navbar{
+      height: 8rem;
+   }
+   #right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* font-size: 80%; */
+      /* display: none; */
+   }
+   #container{
+      margin-top: 10rem;
+   }
+}
+@media only screen and (max-width:450px){
+   #container{
+      padding: 2rem;
+      height: 35rem;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+   }
+   #container h1{
+      text-align: center;
    }
 }

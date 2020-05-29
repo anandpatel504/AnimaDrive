@@ -21,18 +21,18 @@
     margin-left: 2rem;
 }
 #right{
-    width: 25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
 }
 .items{
-    /* animation: slide-nav 3s 2s both; */
     animation-name: slide-nav;
     animation-duration: 3s;  
     animation-delay: 0s;
     animation-fill-mode: both;
+    margin-left: 2rem;
+    letter-spacing: 0.1rem;
 }
 @keyframes slide-nav {
     from {top: -55px;}
@@ -67,14 +67,14 @@
 
 }
 #container{
-    height: 55rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 #section{
-    height: 30rem;
-    line-height: 5rem;
+    line-height: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -92,6 +92,7 @@
     word-spacing: 0.5rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    text-align: center;
 }
 #section h1{
     font-size: 2rem;
@@ -99,6 +100,7 @@
 }
 #section p{
     font-family: 'Anton', cursive;
+    text-align: center;
 }
 #section2{
     font-family: 'Lobster', cursive;
@@ -111,7 +113,7 @@
     align-items: center;
 }
 #section2 img{
-    margin-top: 10rem;
+    margin-top: 40%;
     margin-bottom: 3rem;
 }
 #section2 h2{
@@ -160,9 +162,9 @@
     box-shadow: 0.3em 0.3em 0.5em black;
     background-color: orange;
 }
-        .slide{
-            display: none;
-        }
+.slide{
+    display: none;
+}
 #footer{
     background-color: black;
     position: fixed;
@@ -174,89 +176,31 @@
     justify-content: center;
     align-items: center;
     font-family: 'Anton', cursive;
+    letter-spacing: 0.1rem;
 }
-
-@media only screen and (max-width:810px){
-    #section h2{
-        font-size: 2rem;
-    }
-    .items{
-        margin-left: 1rem;
-    }
-    #section2 p{
-        font-size: 0.9rem;
-    }
-    #footer p{
-        font-size: 0.7rem;
-    }
-    .slide{
-        display: none;
-    }
+#footer p{
+    text-align: center;
 }
-@media only screen and (max-width:610px){
-    #right{
-        display: none;
-        float: left;
-        margin-left: 5rem;
-    }
-    .items{
-        margin-left: 0.7rem;
-        font-size: 0.7rem;
-    }
-    .slide{
-        display: inline-block;
-        color: white;
-        margin-right: 3rem;
-    }
-    #right{
-        flex-direction: column;
-    }
-    #section h2{
-        font-size: 1.5rem;
-    } 
-    #section p{
-        font-size: 0.8rem;
-    }
-    #section2 p{
-        font-size: 0.7rem;
-    }
-}
-@media only screen and (max-width:500px){
-    /* #navbar{
+@media only screen and (max-width:650px){
+    #navbar{
         height: 6rem;
-    } */
+    }
     #right{
-        display: flex;
         flex-direction: column;
-    }
-    #section h2{
-        font-size: 1rem;
-        letter-spacing: 0.08em;
-    }
-    #section p{
-        font-size: 0.5rem;
-        /* letter-spacing: 0.08em; */
-    }
-    #section2 h2{
-        font-size: 3rem;
-    }
-    #section2 p{
-        font-size: 0.5rem;
-        line-height: 4em;
+        font-size: 90%;
     }
     #section2 img{
-        margin-top: 15rem;
-    }
-    .items{
-        font-size: 0.6rem;
+        margin-top: 130%;
     }
     #footer p{
-        font-size: 0.5rem;
-    }
-    .fa-bars{
-        margin-right: 0rem;
+        font-size: 80%;
     }
 }
-@media only screen and (max-width:360){
-
+@media only screen and (max-width:400px){
+    #section2 img{
+        margin-top: 180%;
+    }
+    #footer p{
+        font-size: 70%;
+    }
 }

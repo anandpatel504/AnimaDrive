@@ -38,6 +38,7 @@ body {
   text-decoration: none;
   color: black;
   margin-right: 3rem;
+  letter-spacing: 0.1rem;
 }
 .items:hover{
   color: white;
@@ -103,9 +104,9 @@ button:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 20; /* Sit on top */
-  left: 25%;
+  left: 19.5%;
   top: 7rem;
-  width: 50%; /* Full width */
+  width: 60%; /* Full width */
   height: 70%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: white;
@@ -131,6 +132,7 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
+  width: 100%;
   padding: 16px;
   z-index: 2;
   /* border: 2px solid red; */
@@ -147,18 +149,25 @@ button:hover {
   height: 75%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: orange;
-  opacity: 0.9;
+  opacity: 1;
   border: 2px solid black;
   padding-top: 2rem;
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-content_1 {
   background-color: #fefefe;
   font-size: 1rem;
   margin: 1% auto 3% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+.modal-content_2 {
+  background-color: #fefefe;
+  font-size: 1rem;
+  margin: 1% auto 3% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -194,7 +203,13 @@ hr {
     position: fixed;
     bottom: 0%;
     width: 100%;
-    height: 3rem;
+    height: 2rem;
+}
+#footer p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width:960px){
   #big_box{
@@ -208,7 +223,13 @@ hr {
 @media only screen and (max-width:630px){
   #right{
     flex-direction: column;
-    font-size: 70%;
+    font-size: 75%;
+  }
+  #navbar{
+    height: 6rem;
+  }
+  #left img{
+    margin-top: 0.6rem;
   }
   #big_box{
     flex-direction: column;
@@ -218,32 +239,25 @@ hr {
   }
   .box{
     font-size: 70%;
-    width: 20%;
+    width: 50%;
     height: 10rem;
     padding: 2rem 2rem;
     margin-bottom: 1rem;
   }
   .modal{
-    left: 15%;
-    width: 70%;
+    left: 5%;
+    width: 90%;
     padding: 0.1rem;
+  }
+  /* .container{
+    width: 90%;
   }
   .term{
     width: 66%;
-  }
+  } */
 }
 @media only screen and (max-width:450px){
   .box{
     font-size: 50%;
   }
 }
-
-
-
-
-
-/* @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
-  }
-} */
